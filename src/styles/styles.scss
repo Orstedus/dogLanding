@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+html{
+    overflow: hidden;
+}
+
+.App{
+    width: 2000px;
+    height: 1000px  ;
+    background-image: url('./materials/sabaka.png');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    .header{
+        .logo{
+            width: 15%  ;
+            margin-left: 5vw;
+            margin-top: 1vw;
+            display: inline-block;
+            pointer-events: none;
+        }
+        .upshape {
+            position: absolute;
+            margin-top: -12vw;
+            pointer-events: none;
+        }
+        .navbar{
+            display: inline-block;
+            position: absolute;
+            right: 0;
+            margin-top: 2.1vw;
+            margin-right: 5vw;
+            p{
+                padding: 5px;
+                display: inline-block;
+                margin: 10px;
+                font-size: 20px;
+                color: white;
+                transition: 0.5s;
+                text-align: center;
+            }
+            p:hover{
+                display: inline-block;
+                margin: 10px;
+                font-size: 20px;
+                color: #e69b1f;
+                cursor: pointer;
+                background-color: azure;
+            }
+        }
+    }
+    .content{
+        text-align: right;
+        margin-top: 125px;
+        h1{
+            font-family: 'Maven Pro', sans-serif;
+            position: absolute;
+            right: 0;
+            margin-right: 100px;
+            font-size: 100px;
+            color: white;
+            width: 600px;
+            line-height: 85px;
+        }
+        h2{
+            position: absolute; 
+            color: white;
+            font-family: 'Hind Madurai', sans-serif;
+            right: 0;
+            margin-right: 100px;
+            font-size: 50px;
+            margin-top: 180px;
+        }
+        p{
+            position: absolute; 
+            color: white;
+            font-family: 'Hind Madurai', sans-serif;
+            right: 0;
+            margin-right: 100px;
+            font-size: 20px;
+            margin-top: 250px;
+            width: 440px;
+        }
+    }
+    .footer{
+        .downshape{
+            width:1600px;
+            position: absolute;
+            right:0;
+            bottom: 0;
+            margin-right: -800px;
+            margin-bottom: -750px;
+            pointer-events: none;
+        }
+        .paws{
+            width: 200px;
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            margin-right: 34vw;
+            margin-bottom: 3vw;
+            transition: 0.5s;
+        }
+        .paws:hover{
+            margin-right: 36vw;
+            margin-bottom: 4vw;
+        }
+        .fblock{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            text-align: right;
+            margin-bottom: 2.5vw;
+            margin-right: 6vw;
+            .socicon{
+                width: 50px;
+                transition: 0.5s;
+                cursor: pointer;
+            }
+            .socicon:hover{
+                width: 60px;
+            }
+            p{
+                color: white;
+                margin-right: 10px;
+            }
+        }
+    }
+    }
+
+@media screen and (max-width: 480px) {
+    html{
+        position:fixed
+    }
+    .App{
+        width: 2000px;
+        height: 1000px  ;
+        background-image: url('./materials/sabaka.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        .header{
+
+            .logo{
+                width: 10%  ;
+                margin-left: 28vw;
+                margin-top: 1vw;
+            }
+            .upshape {
+                width: 0;
+            }
+            .navbar{
+                display: inline-block;
+                position: absolute;
+                right: 0;
+                margin-top: 2.1vw;
+                margin-right: 5vw;
+                p{
+                    padding: 0;
+                    margin: 0;
+                    font-size: 0px;
+                    color: white;
+                }
+            }
+        }
+        .content{
+            text-align: center;
+            margin-top: 125px;
+            h1{
+                position:fixed;
+                margin-right: 6%;
+                font-size: 60px;
+                width: 400px;
+                line-height: 60px;
+            }
+            h2{
+                position:fixed;
+                margin-right: 22%;
+                font-size: 35px;
+                margin-top: 135px;
+            }
+            p{
+                position:fixed;
+                margin-right:17%;
+                font-size: 18px;
+                margin-top: 190px;
+                width: 300px;
+            }
+        }
+        .footer{
+            .downshape{
+                width:1600px;
+                position:fixed;
+                right:0;
+                bottom: 0;
+                margin-right: -800px;
+                margin-bottom: -750px;
+                pointer-events: none;
+            }
+            .paws{
+                left: 0;
+                margin-left: -100px;
+                margin-bottom: 100px;
+            }
+            .fblock{
+                position:fixed;
+                margin-right: 25vw;
+                margin-bottom: 10vw;
+                bottom: 0;
+                text-align: center;
+            }
+        }
+        }
+}
